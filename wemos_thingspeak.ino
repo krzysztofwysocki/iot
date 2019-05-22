@@ -118,4 +118,8 @@ int httpCode = ThingSpeak.writeFields(myChannelNumber, myWriteAPIKey);
 
   // Wait 20 seconds to uodate the channel again
   delay(20000);
+
+  // Alternative wait - deep sleep for 20 seconds to uodate the channel again
+  // ESP.deepSleep(20 * 1000000);
+
 }
